@@ -1,0 +1,38 @@
+processo da eseguire per ogni progetto che si crea
+
+CREAZIONE CARTELLA DEL PROGETTO 
+
+mkdir mio_progetto
+cd mio_progetto
+
+creazione del venv: python -m venv venv
+
+attivazione del venv: venv\Scripts\activate
+
+installazione delle librerie necessarie: pip install ...
+
+verifica delle librerie installate: pip list
+
+creazione del file requirements.txt: pip freeze > requirements.txt
+
+per l'installazione su altro computer: pip install -r requirements.txt
+
+creazione file .gitignore con all'interno questo: 
+
+venv/
+__pycache__/
+
+collegare il git: git init
+
+verifica: git status
+
+creazione repository su github (non fondamentale):
+
+creare la repository direttamente da github
+da terminale una volta aperto nella cartella in cui ti serve: git remote add origin https://github.com/tuo_nome/python_setup.git attento a sostituire al tuo_nome lo username che corrisponde al tuo github
+git remote -v 
+se tutto va bene:
+git push -u origin main
+da qui puoi fare il push normalmente
+
+una volta finito di lavorare ricordarsi di chiudere il venv: deactivate
